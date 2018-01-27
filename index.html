@@ -1,0 +1,14 @@
+<html>
+<body ng-app="myApp">
+    <div ng-controller="myController as ctrl">
+        {{ctrl.estado}}
+        <seleciona-estado estado="ctrl.estado"></seleciona-estado>
+        <seleciona-cidade estado="ctrl.estado" cidade="ctrl.cidade"></seleciona-cidade>
+        <div ng-bind="ctrl.cidade">
+
+        </div>
+    </div>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
